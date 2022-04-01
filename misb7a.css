@@ -1,0 +1,138 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 100px auto 20px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 50px auto;
+        flex-direction: column;
+    }
+}
+.misIcon {
+    width: 200px;
+    height: 200px;
+    background: cadetblue;
+    border: 2px black solid;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .misIcon {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: calc(50% - 75px);
+        margin-top: 180px;
+    }
+}
+@media (max-width: 768px) {
+    .counts {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.counts > div {
+    font-size: 25px;
+    margin-bottom: 35px;
+    background: rgb(0, 158, 163);
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .counts > div {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+.sure {
+    width: 500px;
+    height: 265px;
+    background: #5f9ea0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 75px;
+    box-sizing: border-box;
+    color: navajowhite;
+    box-shadow: 1px 2px 5px 0px black;
+}
+@media (max-width: 768px) {
+    .sure {
+        width: 300px;
+        height: 180px;
+        font-size: 20px;
+        top: 35%;
+    }
+}
+.sure .yes {
+    display: block;
+    text-align: end;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: black;
+    padding: 10px 20px;
+    border-radius: inherit;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .sure .yes {
+        bottom: 20px;
+        left: 20px;
+    }
+}
+.sure .no {
+    display: block;
+    text-align: end;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background: black;
+    padding: 10px 20px;
+    border-radius: inherit;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .sure .no {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+button {
+    font-size: 30px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: calc(50% - 87px);
+    outline: none;
+    color: navajowhite;
+    background: cadetblue;
+    box-shadow: 3px 3px 8px -3px grey;
+    cursor: pointer;
+    border: none;
+}
+@media (max-width: 768px) {
+    button {
+        top: 470px;
+    }
+}
