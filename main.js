@@ -79,9 +79,7 @@ mis.addEventListener("click", () => {
 // PWA
 if ("serviceWorker" in navigator) {
   let regserServce =  async () => {
-    let reg = await navigator.serviceWorker.register('/sw.js')
-    console.log(reg, 'vtvrt' )
-    
+    let reg = await navigator.serviceWorker.register('/misb7a/sw.js')    
   }
   regserServce()
 }

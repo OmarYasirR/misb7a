@@ -1,7 +1,8 @@
 {
+  "id": "/misb7a/",
 	"name": "Misb7a",
 	"short_name": "Misb7a",
-	"start_url": "/index.html",
+	"start_url": "/misb7a/",
 	"display": "standalone",
 	"background_color": "#11698e",
 	"theme_color": "#11698e",
