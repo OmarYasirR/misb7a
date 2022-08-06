@@ -1,10 +1,10 @@
 let staticCachName = 'staticSite'
 let assets = [
-  '/',
-  '/index.html',
-  '/main.js',
-  '/misb7a.css',
-  '/images/icons/icon-512x512.png'
+  '/misb7a/',
+  '/misb7a/index.html',
+  '/misb7a/main.js',
+  '/misb7a/misb7a.css',
+  '/misb7a/images/icons/icon-512x512.png'
 ]
 // install service worker
 self.addEventListener('install', evt => {
