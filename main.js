@@ -26,7 +26,7 @@ mis.onclick = function () {
         hexcolor.push(coArry[Math.floor(Math.random() * coArry.length)]);
     }
     let fainalColor = `#${hexcolor.join("")}`;
-    mis.style.backgroundColor = fainalColor;
+    // mis.style.backgroundColor = fainalColor;
     let contArray = [...counterContainer.children];
     contArray.forEach((el) => {
         el.style.backgroundColor = fainalColor;
@@ -67,3 +67,21 @@ document.querySelector(".no").onclick = function () {
     document.querySelector(".sure").style.cssText = "display: none";
     document.querySelector(".container").style.cssText = "opacity: 1";
 };
+
+
+mis.addEventListener("click", () => {
+  document.querySelector('.misIcon div').classList.add('transform')
+  setTimeout(() => {
+    document.querySelector('.misIcon div').classList.remove('transform')
+  }, 100)
+})
+
+// PWA
+if ("serviceWorker" in navigator) {
+  let regserServce =  async () => {
+    let reg = await navigator.serviceWorker.register('/sw.js')
+    console.log(reg, 'vtvrt' )
+    
+  }
+  regserServce()
+}
