@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="misb7a.css" />
+    <link rel="shortcut icon" href="./images/icons/icon-512x512.png" />
+    <meta name="theme-color" content="#11698e" />
+    <!-- IOS Support -->
+    <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#11698e" />
+
     <title>Misba7a</title>
-    <link rel="stylesheet" href="misb7a.css">
-</head>
-<body>
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
     <div class="container">
-        <div class="misIcon"></div>
-        <div class="counts">
-            <div>
-                <div class="hebat">0</div>
-                <div>عدد الحبات</div>
-            </div>
-            <div>
-                <div class="ijm">0</div>
-                <div>الاجمالي</div>
-            </div>
-            <div>
-                <div class="dwr">0</div>
-                <div>الدورات</div>
-            </div>
-            <div>
-                <div class="hali">0</div>
-                <div>الحالي</div>
-            </div>
+      <div class="misIcon">
+        <div>
+          <img src="./images/icons/icon-512x512.png" alt="">
         </div>
+      </div>
+      <div class="counts">
+        <div>
+          <div class="hebat">0</div>
+          <div>عدد الحبات</div>
+        </div>
+        <div>
+          <div class="ijm">0</div>
+          <div>الاجمالي</div>
+        </div>
+        <div>
+          <div class="dwr">0</div>
+          <div>الدورات</div>
+        </div>
+        <div>
+          <div class="hali">0</div>
+          <div>الحالي</div>
+        </div>
+      </div>
     </div>
     <div class="sure">
-        هل تريد مسح جميع العدادات
-        <span class="yes">نعم</span>
-        <span class="no">لا</span>
+      هل تريد مسح جميع العدادات
+      <span class="yes">نعم</span>
+      <span class="no">لا</span>
     </div>
     <button>مسح الكل</button>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

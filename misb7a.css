@@ -3,6 +3,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+body{
+  background-color: #eee;
+}
 .container {
     display: flex;
     justify-content: flex-end;
@@ -19,15 +22,30 @@
 .misIcon {
     width: 200px;
     height: 200px;
-    background: cadetblue;
-    border: 2px black solid;
-    border-radius: 50%;
     transform: translateY(-50%);
     left: 7%;
     top: 50%;
     position: absolute;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+.misIcon > div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.misIcon > div.transform{
+  transform: scale(1.3);
+}
+.misIcon > div img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 768px) {
     .misIcon {
@@ -50,6 +68,7 @@
     background: rgb(0, 158, 163);
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
 }
 @media (max-width: 768px) {
     .counts > div {
